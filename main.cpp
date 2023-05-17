@@ -7,13 +7,13 @@ int main() {
     char mode;
     int a, b, result;
 
-    cout << "Enter mode";
+    cout << "Enter mode: ";
     cin >> mode;
 
-    cout << "Enter first number";
+    cout << "Enter first number: ";
     cin >> a;
 
-    cout << "Enter second number";
+    cout << "Enter second number: ";
     cin >> b;
 
     switch(mode) {
