@@ -1,5 +1,6 @@
 #include <iostream>
-#include "arithematic.cpp"
+#include "lib/arithematic.cpp"
+#include "lib/matrix.cpp"
 
 using namespace std;
 
@@ -10,11 +11,13 @@ int main() {
     cout << "Enter mode: ";
     cin >> mode;
 
-    cout << "Enter first number: ";
-    cin >> a;
+    if (mode == '+' || mode == '-' || mode == '*' || mode == '/') {
+        cout << "Enter first number: ";
+        cin >> a;
 
-    cout << "Enter second number: ";
-    cin >> b;
+        cout << "Enter second number: ";
+        cin >> b;
+    }
 
     switch(mode) {
         case '+':
@@ -31,6 +34,10 @@ int main() {
 
         case '/':
             result = divide(a, b);
+            break;
+
+        case 'M':
+            result = matrix();
             break;
 
         default:
